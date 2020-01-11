@@ -5,22 +5,16 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { RentalComponent } from './rental/rental.component';
-import { TempComponent } from './temp/temp.component';
-
 
 const routes: Routes = [
   {
-    path: '', component: RentalComponent
-  },
-  {
-    path: 'temp', component: TempComponent
+    path: '', redirectTo: '/rentals', pathMatch: 'full'
   }
 ];
 
 @NgModule({
   declarations: [
-    AppComponent, HeaderComponent, TempComponent
+    AppComponent, HeaderComponent
   ],
   imports: [
     RentalModule,
