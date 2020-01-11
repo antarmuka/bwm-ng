@@ -1,5 +1,7 @@
-@import 'variables';
+@import "variables";
 
-html, body, p {
+html,
+body,
+p {
   color: $main-text-color;
 }
